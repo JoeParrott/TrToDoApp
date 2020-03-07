@@ -14,21 +14,45 @@
     <header>
         <div>
             <h2>This is the page title</h2>
+            <!-- dynamic username + msg needed here-->
         </div>
         <div>
             <!--div space for calendar element-->
+            <!-- how to link react calendar + navbar type buttons?-->
+            <!-- add task button should bring up the full task page-->
+            <!-- change timezone button, should bringup dropdown list of typical zones (London / Paris / NY / LA etc etc) and to change calendar, is this part of the calendar functionality already or will it need to be added?-->
+            <!-- colourblind mode should change task status icons in tasks col1, can use classes and the state feature to accomplish this? also could possibly add a 'dark theme' changing white-> black for background / text since the aim is a minimalistic style? idea subject to change.-->
         </div>
         <div>
             <!--div space for 'number of critical tasks today'-->
+            <!-- check # of critical tasks for today and display, so calendar check needed-->
         </div>
     </header>
     <main>
-        <div> <!-- this div will be too large/unruly if contained here, will need to import alot to this space or have another file containing the code of the imports-->
+        <div> <!-- tasks-->
+            <div> <!-- tasks table-->
+            <!-- this div will be too large/unruly if contained here, will need to import alot to this space or have another file containing the code of the imports-->
             <p>This is where the tasks will go!</p>
+            <!-- need table with 4 row 6 col, collapsing to 3 col depending on resolution-->
+            <!-- if cols are: task, descrip, media, done(task) delete(task) (edit), cols 2/3/6 should collapse, 2 and 3 should also collapse if blank at any res, and col 1 space accordingly-->
+            <!-- onclick for cols 1 2 3 should popup full info for task, so dropdown form? not sure what type of component to use here-->
+            <!-- onclick for cols 4 5 6 perform actions, have these components as icons-->
+            <!-- tasks given one of three priorities with traffic light colours, red for urgent, yellow for important, green for less important-->
+            <!-- tasks displayed if list is >4 given priority by completionTime=today and urgency, red+yellow for today trumping red with no set date-->
+        </div>
+        <div>
+            <!--div space for dropdown arrow-->
+            <!-- arrow will be onclick showing more tasks than the orignal 4, extending the length of the page, not yet decided on max / scroll numbers until can see the page in action-->
+            <!-- arrow should float in relation to tasks displayed-->
+        </div>
         </div>
     </main>
     <footer>
-        <h3>This is the footer</h3>
+        <div>
+            <h3>This is the footer</h3>
+            <!-- dynamic # of tasks completed today needed here, linking to one of 2 msgs-->
+            <!-- could add more msgs than just tasksdone =0 and taskdone >= 0 for different levels of tryhard, maybe upto a max of 8 in increments of 2? just a thought, may delete this idea, but isnt hard to implement-->
+        </div>
     </footer>
 </body>
 
