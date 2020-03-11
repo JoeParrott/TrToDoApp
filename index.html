@@ -14,7 +14,7 @@
     <header class="container-fluid">
         <div class="row align-items-centre">
             <div class="col-md-6">
-                <h2 class="rounded text-light bg-secondary p-3 mt-2">Joe's to do list</h2>
+                <h2 class="rounded text-light bg-secondary p-3 mt-2">Joe's To Do List</h2>
                 <!-- dynamic username + msg needed here-->
                 <div class="row p-5">
                     <div class="col-4"><!-- button 1-->
@@ -27,11 +27,11 @@
                         <button type="button" class="btn btn-dark">Change Theme</button>
                     </div>
                 </div>
-                <p>Placeholder text for number of critical tasks todo today</p>
+                <h4>Joe you have 3 tasks to do today</h4>
                 <!--div space for 'number of critical tasks today'-->
                 <!-- check # of critical tasks for today and display, so calendar check needed-->
             </div>
-            <div class="col-md-6"><img src="placeholder_pics/calendar_image_from_unsplash.jpg" class="col-10 mt-2">
+            <div class="col-md-6"><img src="placeholder_pics/calendar_image_from_unsplash.jpg" class="col-10 mt-2 rounded">
                 <!--div space for calendar element-->
                 <!-- how to link react calendar + navbar type buttons?-->
                 <!-- add task button should bring up the full task page-->
@@ -43,12 +43,54 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="container">
             <!-- tasks-->
             <div>
+                <div class="row p-4"><!-- task 1-->
+                    <div class="col-md-3">
+                        <p>Wash the dishes</p> <!--these lines will be dynamic input from form via add task menu/form?-->
+                    </div>
+                    <div class="col-md-5 hidden-sm">
+                        <p>I need to set the dishwasher going and wash the pans and dishes that don't fit!</p>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success">Completed</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <div class="row p-4"><!-- task 2-->
+                    <div class="col-md-3">
+                        <p>Work on my bootstrap skills</p> <!--these lines will be dynamic input from form via add task menu/form?-->
+                    </div>
+                    <div class="col-md-5 hidden-sm">
+                        <p>Check documentation on bootstrap site, learn more about dynamic input and layout/spacing, make a component list and start implementing these elements</p>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success">Completed</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <div class="row p-4"><!-- task 3-->
+                    <div class="col-md-3">
+                        <p>Help Grandad with his bins</p> <!--these lines will be dynamic input from form via add task menu/form?-->
+                    </div>
+                    <div class="col-md-5 hidden-sm">
+                        <p></p>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success">Completed</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                    <div class="dropdown-toggle" role="menu" widget><!--this is the dropdown extended list arrow --></div>
+                </div>
                 <!-- tasks table-->
                 <!-- this div will be too large/unruly if contained here, will need to import alot to this space or have another file containing the code of the imports-->
-                <p>This is where the tasks will go!</p>
                 <!-- need table with 4 row 6 col, collapsing to 3 col depending on resolution-->
                 <!-- if cols are: task, descrip, media, done(task) delete(task) (edit), cols 2/3/6 should collapse, 2 and 3 should also collapse if blank at any res, and col 1 space accordingly-->
                 <!-- onclick for cols 1 2 3 should popup full info for task, so dropdown form? not sure what type of component to use here-->
